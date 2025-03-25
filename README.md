@@ -97,4 +97,4 @@ Once the dependencies are installed and the dataset is set up, execute the provi
 - IMT2022103 Anurag Ramaswamy : Completed parts A and B and contributed in writing readme
 
 ## Repository
-The complete code for this project is available at:  [GitHub Repository - VR Mini Project 1](https://github.com/vr-assignments/VR_MiniProject1_AnanthakrishnaK_IMT2022086)
+The complete code for this project is available at:  [GitHub Repository - VR Mini Project 1](https://github.com/vr-assignments/VR_MiniProject1_IMT2022_073_086_103)
