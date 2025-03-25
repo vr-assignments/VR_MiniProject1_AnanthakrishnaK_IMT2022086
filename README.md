@@ -29,7 +29,7 @@ The 2 main objectives of the project were as follows:
 - **U-Net Model Training**: A U-Net architecture was implemented with four encoder blocks using Conv2D (ReLU activation, 3×3 kernel, padding='same') followed by MaxPooling2D (2×2). The bottleneck consisted of 1024 filters, and the decoder used UpSampling2D with concatenation and convolution layers. The model was compiled using the Adam optimizer (learning rate 1e-3) with binary cross-entropy loss and IoU/Dice metrics.
 - **Performance Evaluation**: IoU and Dice coefficients were calculated for each predicted mask. The mean IoU and Dice scores across the validation set were computed and reported to assess segmentation accuracy.
 
-## Experiments
+## Hyperparameters and Experiments
 
 We optimized all three models through extensive hyperparameter tuning. For the models in Part A, we used Randomized Search to fine-tune parameters such as different hidden layer sizes, activation functions, and learning rates. For the CNN, we utilized Keras Tuner to explore different architectures, adjusting the number of filters, kernel sizes, optimizers, batch sizes, and other key hyperparameters.
 A simplified U-Net architecture with only three encoder and decoder layers was experimented with to reduce computational time. However, this modification resulted in a significant drop in IoU, indicating that the deeper architecture was crucial for achieving higher segmentation accuracy. 
@@ -38,19 +38,19 @@ A simplified U-Net architecture with only three encoder and decoder layers was e
 
 ### Classification
 
-- SVM achieved an accuracy of 94.14% after hyperparameter tuning .
-- Neural Network achieved an accuracy of 91.94% after hyperparameter tuning.
-- The CNN model gave the highest accuracy of 95.23% after tuning.
+- SVM achieved an accuracy of 94% after hyperparameter tuning .
+- Neural Network achieved an accuracy of 93% after hyperparameter tuning.
+- The CNN model gave the highest accuracy of 97% after tuning.
 
 ### Segmentation
 
 - Watershed segmentation performed poorly due to the blurry nature of the dataset, resulting in an average IoU of 0.2128 on the first 10 images.
 - The U-Net model was trained and tested on the first 700 images, as the entire dataset was too large, leading to high training time.  
 - U-Net segmentation achieved a training IoU of 0.9422 and a training Dice score of 0.9702, while the test IoU was 0.8321 and the test Dice score was 0.9053.
-## Observations
+## Observations and Analysis
 
 ###  Classification
-- SVM and MLP may work well with smaller datasets. They donot capture the spatial feaures as CNN does which helps learning edge, texture, and shape hierarchies through the convolution layers.
+- SVM and MLP may work well with smaller datasets. They do not capture the spatial feaures as CNN does which helps learning edge, texture, and shape hierarchies through the convolution layers, therefore it has the highest accuracy.
 - SVM and MLP require manual feature extraction which may not capture complex features efficiently.
 ### Segmentation
 - As expected, the U-Net architecture outperformed the traditional watershed technique, demonstrating significantly better segmentation accuracy.
@@ -68,6 +68,8 @@ dataset/
 │── dataset2/
 │   │── images/          # Input images
 │   │── mask/            # Corresponding masks (same name as images)
+classification.ipynb
+segmentation.ipynb
 ```
 
 2. Install Dependencies 
