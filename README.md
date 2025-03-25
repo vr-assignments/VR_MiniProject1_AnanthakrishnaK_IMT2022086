@@ -42,7 +42,7 @@ A simplified U-Net architecture with only three encoder and decoder layers was e
 - Neural Network achieved an accuracy of 93% after hyperparameter tuning.
 - The CNN model gave the highest accuracy of 97% after tuning.
 
-Below are two graphs that show train and validation accuracy and train and validation loss over epochs
+Below are two graphs that show train and validation accuracy and train and validation loss over epochs for the CNN model.
 ![plot](./images/classification_accuracy.png)
 ![plot](./images/classification_loss.png)
 
