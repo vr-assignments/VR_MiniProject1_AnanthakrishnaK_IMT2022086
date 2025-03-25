@@ -75,7 +75,7 @@ segmentation.ipynb
 2. Install Dependencies 
 Run the following command to install the required dependencies:  
 ```bash
-pip install opencv-python numpy tensorflow matplotlib scikit-learn tqdm scipy
+pip install opencv-python numpy tensorflow matplotlib scikit-learn tqdm scipy scikit-image keras keras-tuner
 ```
 
 3. Run the Notebooks
@@ -84,7 +84,7 @@ Once the dependencies are installed and the dataset is set up, execute the provi
 ## Contributions
 - IMT2022073 Vasu Aggarwal : Completed Part C and contributed in writing readme
 - IMT2022086 Ananthakrishna K : Completed Part D and contributed in writing readme
-- IMT2022103 Anurag Ramaswamy : Completed parts A and B for binary classification tasks.
+- IMT2022103 Anurag Ramaswamy : Completed parts A and B and contributed in writing readme
 
 ## Repository
 The complete code for this project is available at:  [GitHub Repository - VR Mini Project 1](https://github.com/vr-assignments/VR_MiniProject1_AnanthakrishnaK_IMT2022086)
