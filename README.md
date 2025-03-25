@@ -46,6 +46,7 @@ Below are two graphs that show accuracy and loss over epochs for the CNN model.
 ![plot](./images/classification_accuracy.png)
 ![plot](./images/classification_loss.png)
 
+
 ### Segmentation
 
 - Watershed segmentation performed poorly due to the blurry nature of the dataset, resulting in an average IoU of 0.2128 on the first 10 images.
@@ -55,6 +56,13 @@ Below are two graphs that show accuracy and loss over epochs for the CNN model.
 Below are two graphs that show dice score and IoU over epochs for the U-Net Model.
 ![plot](./images/dice.png)
 ![plot](./images/iou.png)
+
+Below are 3 images of the segmented mask using watershed model 
+![plot](./images/combined_1.png)
+![plot](./images/combined_5.png)
+![plot](./images/combined_10.png)
+
+
 
 
 ## Observations and Analysis
