@@ -51,6 +51,12 @@ Below are two graphs that show accuracy and loss over epochs for the CNN model.
 - Watershed segmentation performed poorly due to the blurry nature of the dataset, resulting in an average IoU of 0.2128 on the first 10 images.
 - The U-Net model was trained and tested on the first 700 images, as the entire dataset was too large, leading to high training time.  
 - U-Net segmentation achieved a training IoU of 0.9422 and a training Dice score of 0.9702, while the test IoU was 0.8321 and the test Dice score was 0.9053.
+
+Below are two graphs that show dice score and IoU over epochs for the U-Net Model.
+![plot](./images/dice.png)
+![plot](./images/iou.png)
+
+
 ## Observations and Analysis
 
 ###  Classification
