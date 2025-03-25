@@ -42,6 +42,10 @@ A simplified U-Net architecture with only three encoder and decoder layers was e
 - Neural Network achieved an accuracy of 93% after hyperparameter tuning.
 - The CNN model gave the highest accuracy of 97% after tuning.
 
+Below are two graphs that show train and validation accuracy and train and validation loss over epochs
+![plot](./images/classification_accuracy.png)
+![plot](./images/classification_loss.png)
+
 ### Segmentation
 
 - Watershed segmentation performed poorly due to the blurry nature of the dataset, resulting in an average IoU of 0.2128 on the first 10 images.
